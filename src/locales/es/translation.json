@@ -1,0 +1,11 @@
+{
+  "welcome": "Bienvenido",
+  "description": "Este es un ejemplo de i18n",
+  "about": {
+    "title": "Sobre mí",
+    "description": "Esta es la página sobre mí"
+  },
+  "routes": {
+    "about": "sobre-mi"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome",
+  "description": "This is an i18n example",
+  "about": {
+    "title": "About",
+    "description": "This is the about page"
+  },
+  "routes": {
+    "about": "about"
+  }
+}
