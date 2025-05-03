@@ -1,13 +1,12 @@
 import { Routes, Route, useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import i18n from "./i18n";
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import { localizedRoutes } from "./routes";
 
 function TranslatedRoutes() {
   const { lang } = useParams();
-  const { t } = useTranslation();
 
   useEffect(() => {
     if (lang && i18n.language !== lang) {
@@ -15,10 +14,15 @@ function TranslatedRoutes() {
     }
   }, [lang]);
 
+  if (!lang || !localizedRoutes[lang as keyof typeof localizedRoutes])
+    return null;
+
+  const paths = localizedRoutes[lang as keyof typeof localizedRoutes];
+
   return (
     <Routes>
-      <Route path="" element={<Home />} />
-      <Route path={t("routes.about")} element={<About />} />
+      <Route index element={<Home />} />
+      <Route path={paths.projects} element={<Projects />} />
     </Routes>
   );
 }

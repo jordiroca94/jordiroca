@@ -1,11 +1,11 @@
 {
   "welcome": "Welcome",
   "description": "This is an i18n example",
-  "about": {
-    "title": "About",
-    "description": "This is the about page"
+  "projects": {
+    "title": "Projects",
+    "description": "Projects page"
   },
   "routes": {
-    "about": "about"
+    "projects": "projects"
   }
 }
