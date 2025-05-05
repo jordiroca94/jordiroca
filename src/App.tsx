@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import TranslatedRoutes from "./TranslatedRoutes";
-import "./i18n";
+import TranslatedRoutes from "./i18n/TranslatedRoutes";
+import "./i18n/i18n";
 
 function App() {
   return (

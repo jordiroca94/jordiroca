@@ -1,8 +1,8 @@
 import { Routes, Route, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import i18n from "./i18n";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Home from "../pages/Home";
+import Projects from "../pages/Projects";
 import { localizedRoutes } from "./routes";
 
 function TranslatedRoutes() {
