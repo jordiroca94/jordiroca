@@ -1,125 +1,200 @@
 "use client";
 
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { cn } from "../lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { Button } from "./ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const navigationLinks = [
+    { title: "About", href: "" },
+    { title: "Projects", href: "routes.projects" },
+  ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const languages = [
+    { code: "en", name: "English", flag: "🇬🇧" },
+    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  ];
+
+  const closeSheet = () => setIsOpen(false);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
 
   return (
-    <nav className="relative z-50 w-full py-4 px-6 md:px-12 flex items-center justify-between border-b border-gray-100">
-      <Link to="/" className="text-xl font-medium tracking-tight">
-        Jordi Roca
-      </Link>
-
-      <div className="hidden md:flex items-center space-x-8">
-        <Link
-          to={`/${i18n.language}`}
-          className="text-gray-600 hover:text-black transition-colors"
-        >
-          About
-        </Link>
-        <Link
-          to={`/${i18n.language}/${t("routes.projects")}`}
-          className="text-gray-600 hover:text-black transition-colors"
-        >
-          Projects
-        </Link>
-
-        <div className="flex items-center space-x-2 ml-4 border-l border-gray-200 pl-4">
-          <button
-            className={`px-2 py-1 text-sm ${
-              i18n.language === "en"
-                ? "font-medium text-black"
-                : "text-gray-500 hover:text-black"
-            }`}
-            onClick={() => changeLanguage("en")}
-            aria-label="Switch to English"
-          >
-            ENG
-          </button>
-          <button
-            className={`px-2 py-1 text-sm ${
-              i18n.language === "es"
-                ? "font-medium text-black"
-                : "text-gray-500 hover:text-black"
-            }`}
-            onClick={() => changeLanguage("es")}
-            aria-label="Switch to Spanish"
-          >
-            SPA
-          </button>
-        </div>
-      </div>
-
-      <button
-        className="md:hidden"
-        onClick={toggleMenu}
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-      >
-        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-
-      <div
-        className={`md:hidden fixed  top-0 left-0 right-0 bg-white z-20 border-b border-gray-100 shadow-sm transition-all duration-300 ease-in-out transform ${
-          isMenuOpen
-            ? "translate-y-16"
-            : "-translate-y-full pointer-events-none"
-        }`}
-      >
-        <div className="flex flex-col py-4 px-6">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
+      <div className="flex h-16 items-center justify-between px-4 lg:px-8 xl:px-12 2xl:px-16">
+        <div className="flex items-center">
           <Link
             to="/"
-            className="py-2 text-gray-600 hover:text-black transition-colors"
-            onClick={() => setIsMenuOpen(false)}
+            className="flex items-center space-x-2 text-xl font-bold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-md px-2 py-1"
+            aria-label="Go to homepage"
           >
-            About
+            <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-sm">
+                JR
+              </span>
+            </div>
+            <span className="hidden sm:block">Jordi Roca</span>
           </Link>
-          <Link
-            to={`/${i18n.language}/${t("routes.projects")}`}
-            className="py-2 text-gray-600 hover:text-black transition-colors"
-            onClick={() => setIsMenuOpen(false)}
+        </div>
+        <div className="hidden md:flex items-center space-x-8">
+          <nav
+            className="flex items-center space-x-6"
+            role="navigation"
+            aria-label="Main navigation"
           >
-            Projects
-          </Link>
+            {navigationLinks.map((link) => (
+              <Link
+                to={`/${i18n.language}/${t(link.href)}`}
+                key={link.title}
+                className="text-sm font-medium transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-md px-2 py-1"
+              >
+                {link.title}
+              </Link>
+            ))}
+          </nav>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="flex items-center space-x-2 group"
+                aria-label={`Current language: ${i18n.language}. Click to change language`}
+              >
+                <Globe className="h-4 w-4" />
+                <span>{i18n.language.toUpperCase()}</span>
+                <ChevronDown
+                  className={cn(
+                    "h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180"
+                  )}
+                />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-48">
+              {languages.map((language) => (
+                <DropdownMenuItem
+                  key={language.code}
+                  onClick={() => changeLanguage(language.code)}
+                  className={cn(
+                    "flex items-center space-x-2 cursor-pointer",
+                    i18n.language === language.code && "bg-accent"
+                  )}
+                >
+                  <span>{language.flag}</span>
+                  <span>{language.name}</span>
+                  {i18n.language === language.code && (
+                    <span className="ml-auto text-xs text-muted-foreground">
+                      ✓
+                    </span>
+                  )}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+        <div className="md:hidden">
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label="Open navigation menu"
+                aria-expanded={isOpen}
+                aria-controls="mobile-menu"
+                className="relative"
+              >
+                <Menu
+                  className={cn(
+                    "h-6 w-6 transition-all",
+                    isOpen && "rotate-90 scale-0"
+                  )}
+                />
+                <X
+                  className={cn(
+                    "absolute h-6 w-6 transition-all",
+                    !isOpen && "rotate-90 scale-0"
+                  )}
+                />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side="top"
+              className="w-full sm:w-[350px]"
+              id="mobile-menu"
+            >
+              <SheetHeader className="text-left">
+                <SheetTitle>Menu</SheetTitle>
+              </SheetHeader>
 
-          <div className="flex items-center space-x-2 mt-4 pt-4 border-t border-gray-100">
-            <button
-              className={`px-2 py-1 text-sm ${
-                i18n.language === "en"
-                  ? "font-medium text-black"
-                  : "text-gray-500 hover:text-black"
-              }`}
-              onClick={() => changeLanguage("en")}
-              aria-label="Switch to English"
-            >
-              ENG
-            </button>
-            <button
-              className={`px-2 py-1 text-sm ${
-                i18n.language === "es"
-                  ? "font-medium text-black"
-                  : "text-gray-500 hover:text-black"
-              }`}
-              onClick={() => changeLanguage("es")}
-              aria-label="Switch to Spanish"
-            >
-              SPA
-            </button>
-          </div>
+              <div className="flex flex-col space-y-6 mt-8">
+                <nav
+                  className="flex flex-col space-y-1"
+                  role="navigation"
+                  aria-label="Mobile navigation"
+                >
+                  {navigationLinks.map((link) => (
+                    <Link
+                      key={link.title}
+                      to={`/${i18n.language}/${t(link.href)}`}
+                      onClick={closeSheet}
+                      className="flex items-center px-3 py-3 text-sm font-medium rounded-md transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                    >
+                      {link.title}
+                    </Link>
+                  ))}
+                </nav>
+                <div className="border-t pt-6">
+                  <h3 className="text-sm font-medium text-muted-foreground mb-3">
+                    Language
+                  </h3>
+                  <div className="grid grid-cols-2 gap-2">
+                    {languages.map((language) => (
+                      <Button
+                        key={language.code}
+                        variant={
+                          i18n.language === language.code
+                            ? "default"
+                            : "outline"
+                        }
+                        size="sm"
+                        onClick={() => {
+                          changeLanguage(language.code);
+                          closeSheet();
+                        }}
+                        className="flex items-center space-x-2 justify-start"
+                      >
+                        <span>{language.flag}</span>
+                        <span className="text-xs">{language.name}</span>
+                      </Button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-    </nav>
+    </header>
   );
 }

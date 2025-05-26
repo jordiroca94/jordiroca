@@ -5,7 +5,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="text-3xl">
+    <div>
       <Navbar />
       <h1>{t("projects.title")}</h1>
       <h2>{t("projects.description")}</h2>
