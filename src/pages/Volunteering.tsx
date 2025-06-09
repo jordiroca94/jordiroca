@@ -1,12 +1,12 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import ProjectsComponent from "../components/ProjectsComponent";
+import Volunteering from "../components/Volunteering";
 
 const Projects = () => {
   return (
     <div>
       <Navbar />
-      <ProjectsComponent />
+      <Volunteering />
       <Footer />
     </div>
   );

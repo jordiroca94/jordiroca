@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-
+import ProfileImage from "../assets/images/profile.jpeg";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { t } from "i18next";
+import Socials from "./Socials";
 type Props = {
   theme?: "light" | "dark";
 };
@@ -7,6 +11,7 @@ type Props = {
 export default function Canvas({ theme = "light" }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mounted, setMounted] = useState(false);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     setMounted(true);
@@ -142,7 +147,7 @@ export default function Canvas({ theme = "light" }: Props) {
   }, [theme, mounted]);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden -mt-16">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 -z-10"
@@ -154,7 +159,9 @@ export default function Canvas({ theme = "light" }: Props) {
           <div className="mx-auto max-w-3xl">
             <div className="flex flex-col items-center md:flex-row md:items-start md:space-x-12">
               <div className="mb-8 md:mb-0">
-                <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white/10 shadow-xl"></div>
+                <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 shadow-xl">
+                  <img src={ProfileImage} alt="profile" />
+                </div>
               </div>
 
               <div className="text-center md:text-left">
@@ -166,18 +173,18 @@ export default function Canvas({ theme = "light" }: Props) {
                 </h2>
                 <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
                   With three years of experience building robust and scalable
-                  applications, I specialize in creating elegant solutions to
-                  complex problems. My expertise spans full-stack development
-                  with a focus on modern JavaScript frameworks, cloud
-                  architecture, and delivering exceptional user experiences.
+                  applications. Full-stack development with a focus on modern
+                  JavaScript frameworks (Next.js & React) and maintained backend
+                  APIs in Go and Node.js.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-                  <button className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+                  <Link
+                    to={`/${i18n.language}/${t("routes.projects")}`}
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
+                  >
                     View Projects
-                  </button>
-                  <button className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
-                    Contact Me
-                  </button>
+                  </Link>
+                  <Socials />
                 </div>
               </div>
             </div>

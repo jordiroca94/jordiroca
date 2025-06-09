@@ -1,15 +1,15 @@
-import { useTranslation } from "react-i18next";
 import Navbar from "../components/Navbar";
 import BackgroundCanvas from "../components/BackgroundCanvas";
+import Experience from "../components/Experience";
+import Footer from "../components/Footer";
 
 const Home = () => {
-  const { t } = useTranslation();
-
   return (
     <div>
       <Navbar />
       <BackgroundCanvas theme="light" />
-      <h1>{t("welcome")}</h1>
+      <Experience />
+      <Footer />
     </div>
   );
 };

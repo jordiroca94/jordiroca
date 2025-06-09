@@ -4,6 +4,7 @@ import i18n from "./i18n";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import { localizedRoutes } from "./routes";
+import Volunteering from "../pages/Volunteering";
 
 function TranslatedRoutes() {
   const { lang } = useParams();
@@ -23,6 +24,7 @@ function TranslatedRoutes() {
     <Routes>
       <Route index element={<Home />} />
       <Route path={paths.projects} element={<Projects />} />
+      <Route path={paths.volunteering} element={<Volunteering />} />
     </Routes>
   );
 }

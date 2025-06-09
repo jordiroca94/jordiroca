@@ -4,13 +4,13 @@
   "navigation": {
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "volunteering": "Voluntariado"
+    "volunteering": "Freiwilligenarbeit"
   },
   "projects": {
     "title": "Proyectos"
   },
   "routes": {
     "projects": "proyectos",
-    "volunteering": "voluntariado"
+    "volunteering": "freiwilligenarbeit"
   }
 }

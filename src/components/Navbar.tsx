@@ -24,8 +24,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const navigationLinks = [
-    { title: "About", href: "" },
-    { title: "Projects", href: "routes.projects" },
+    { title: t("navigation.about"), href: "" },
+    { title: t("navigation.projects"), href: t("routes.projects") },
+    { title: t("navigation.volunteering"), href: t("routes.volunteering") },
   ];
 
   const languages = [
@@ -54,7 +55,6 @@ export default function Navbar() {
                 JR
               </span>
             </div>
-            <span className="hidden sm:block">Jordi Roca</span>
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-8">
@@ -65,7 +65,7 @@ export default function Navbar() {
           >
             {navigationLinks.map((link) => (
               <Link
-                to={`/${i18n.language}/${t(link.href)}`}
+                to={`/${i18n.language}/${link.href}`}
                 key={link.title}
                 className="text-sm font-medium transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-md px-2 py-1"
               >
