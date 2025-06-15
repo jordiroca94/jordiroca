@@ -42,10 +42,17 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Movie Recommender AI",
+    title: "Movie Recommender Script",
     description:
       "A script that uses OpenAI to recommend movies based on user input.",
     githubUrl: "https://github.com/jordiroca94/openai-script",
+  },
+  {
+    id: 6,
+    title: "CSV Travel Review Processor",
+    description:
+      "Script that transforms customer travel reviews into actionable insights using OpenAI's GPT-4 model.",
+    githubUrl: "https://github.com/jordiroca94/csv-processor",
   },
 ];
 

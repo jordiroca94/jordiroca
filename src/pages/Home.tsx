@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <BackgroundCanvas theme="light" />
+      <BackgroundCanvas />
       <Experience />
       <Footer />
     </div>

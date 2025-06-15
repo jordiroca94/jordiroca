@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { t } from "i18next";
 import Socials from "./Socials";
-type Props = {
-  theme?: "light" | "dark";
-};
 
-export default function Canvas({ theme = "light" }: Props) {
+export default function Canvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mounted, setMounted] = useState(false);
   const { i18n } = useTranslation();
@@ -47,8 +44,7 @@ export default function Canvas({ theme = "light" }: Props) {
         this.size = Math.random() * 3 + 1;
         this.speedX = (Math.random() - 0.5) * 0.5;
         this.speedY = (Math.random() - 0.5) * 0.5;
-        this.color =
-          theme === "dark" ? "rgba(255, 255, 255, 0.5)" : "rgba(0, 0, 0, 0.5)";
+        this.color = "rgba(0, 0, 0, 0.5)";
       }
 
       update() {
@@ -109,10 +105,7 @@ export default function Canvas({ theme = "light" }: Props) {
             if (!ctx) return;
 
             const opacity = 1 - distance / maxDistance;
-            ctx.strokeStyle =
-              theme === "dark"
-                ? `rgba(255, 255, 255, ${opacity * 0.2})`
-                : `rgba(0, 0, 0, ${opacity * 0.2})`;
+            ctx.strokeStyle = `rgba(0, 0, 0, ${opacity * 0.2})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -144,7 +137,7 @@ export default function Canvas({ theme = "light" }: Props) {
       window.removeEventListener("resize", resizeCanvas);
       window.removeEventListener("click", handleClick);
     };
-  }, [theme, mounted]);
+  }, [mounted]);
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden -mt-16">
