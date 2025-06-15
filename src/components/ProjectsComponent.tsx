@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
+import TypograhpyH2 from "./ui/TypograhpyH2";
 
 interface Project {
   id: number;
@@ -61,7 +62,7 @@ export default function ProjectsComponent() {
     <div className="min-h-screen bg-white dark:bg-gray-900 -my-16 pt-32">
       <div className="max-w-4xl mx-auto px-6">
         <section>
-          <h2 className="text-2xl font-semibold mb-8">Code & Craft</h2>
+          <TypograhpyH2 label="Code & Craft" />
           <section>
             <div className="space-y-2">
               {projects.map((project) => (

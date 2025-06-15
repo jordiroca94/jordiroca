@@ -13,7 +13,7 @@ i18n
     resources: {
       en: { translation: enTranslation },
       es: { translation: esTranslation },
-      de: { translation: { deTranslation } },
+      de: { translation: deTranslation },
     },
     fallbackLng: "en",
     interpolation: {

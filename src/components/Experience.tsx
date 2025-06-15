@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import TypograhpyH2 from "./ui/TypograhpyH2";
 
 export default function Experience() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
@@ -10,6 +11,7 @@ export default function Experience() {
     {
       title: "Software Engineer",
       company: "Acai Travel",
+      companyUrl: "https://www.acaitravel.com",
       period: "Oct 2024 - Present",
       location: "Barcelona, Spain",
       responsibilities: [
@@ -23,6 +25,7 @@ export default function Experience() {
     {
       title: "Front End Developer",
       company: "Dallonses",
+      companyUrl: "https://www.dallonses.com",
       period: "Aug 2022 - Sep 2024",
       location: "Barcelona, Spain",
       responsibilities: [
@@ -34,6 +37,7 @@ export default function Experience() {
     {
       title: "Front End Developer",
       company: "ClowID",
+      companyUrl: "https://www.clowid.com",
       period: "Mar 2022 - June 2022",
       location: "Sweden (Remote)",
       responsibilities: [
@@ -80,13 +84,7 @@ export default function Experience() {
   return (
     <div className="bg-gray-50 min-h-screen py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-16">
-          <h1 className="text-4xl font-light text-gray-900 mb-4">
-            What have I been up to?
-          </h1>
-          <div className="w-12 h-px bg-gray-300"></div>
-        </div>
-
+        <TypograhpyH2 label="What have I been up to?" />
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div
@@ -114,7 +112,9 @@ export default function Experience() {
                     >
                       {exp.title}
                     </h2>
-                    <p
+                    <a
+                      href={exp.companyUrl}
+                      target="_blank"
                       className={`text-lg font-medium mb-2 transition-colors duration-500 ${
                         visibleItems.has(index)
                           ? "text-blue-600"
@@ -122,7 +122,7 @@ export default function Experience() {
                       }`}
                     >
                       {exp.company}
-                    </p>
+                    </a>
                   </div>
                   <div className="flex flex-col text-right">
                     <p className="text-sm text-gray-600 mb-1 font-medium">

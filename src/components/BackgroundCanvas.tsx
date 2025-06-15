@@ -161,14 +161,10 @@ export default function Canvas() {
                 <h1 className="mb-2 text-4xl font-bold tracking-tight">
                   Jordi Roca
                 </h1>
-                <h2 className="mb-6 text-xl font-medium text-muted-foreground">
-                  Software Engineer
-                </h2>
                 <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-                  With three years of experience building robust and scalable
-                  applications. Full-stack development with a focus on modern
-                  JavaScript frameworks (Next.js & React) and maintained backend
-                  APIs in Go and Node.js.
+                  I'm a software engineer with over 3 years of experience. I
+                  specialize in building web applications using React, Next.js
+                  TypeScript, Node.js & Go.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 md:justify-start">
                   <Link
