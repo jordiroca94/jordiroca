@@ -67,7 +67,7 @@ export default function Navbar() {
               <Link
                 to={`/${i18n.language}/${link.href}`}
                 key={link.title}
-                className="text-sm font-medium transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-md px-2 py-1"
+                className="text-sm font-medium"
               >
                 {link.title}
               </Link>

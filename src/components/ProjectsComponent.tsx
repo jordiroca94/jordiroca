@@ -59,16 +59,14 @@ const projects: Project[] = [
 export default function ProjectsComponent() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 -my-16 pt-32">
-      <div className="max-w-4xl mx-auto px-6 ">
+      <div className="max-w-4xl mx-auto px-6">
         <section>
-          <h2 className="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">
-            Code & Craft
-          </h2>
+          <h2 className="text-2xl font-semibold mb-8">Code & Craft</h2>
           <section>
-            <div className="space-y-8">
+            <div className="space-y-2">
               {projects.map((project) => (
-                <div key={project.id} className="group">
-                  <div className="flex items-start justify-between">
+                <div>
+                  <div className="flex items-start justify-between p-2">
                     <div className="flex-1">
                       <h3 className="text-gray-900 font-medium mb-1">
                         {project.title}
@@ -83,7 +81,7 @@ export default function ProjectsComponent() {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-gray-900 transition-colors"
+                          className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:scale-110 hover:-translate-y-1 transform"
                         >
                           <ExternalLink size={18} />
                         </a>
@@ -92,7 +90,7 @@ export default function ProjectsComponent() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-gray-900 transition-colors"
+                        className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:scale-110 hover:-translate-y-1 transform"
                       >
                         <Github size={18} />
                       </a>
