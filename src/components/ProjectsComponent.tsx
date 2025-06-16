@@ -52,7 +52,7 @@ const projects: Project[] = [
     id: 6,
     title: "CSV Travel Review Processor",
     description:
-      "Script that transforms customer travel reviews into actionable insights using OpenAI's GPT-4 model.",
+      "Script that transforms customer travel reviews into actionable insights using OpenAI.",
     githubUrl: "https://github.com/jordiroca94/csv-processor",
   },
 ];

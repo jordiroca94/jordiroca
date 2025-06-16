@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import TypograhpyH2 from "./ui/TypograhpyH2";
+import LinkAnimation from "./LinkAnimation";
 
 export default function Experience() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
@@ -92,7 +93,6 @@ export default function Experience() {
               ref={(el) => {
                 itemRefs.current[index] = el;
               }}
-              className="group"
             >
               <div
                 className={`bg-white rounded-xl p-8 border transition-all duration-700 ease-out ${
@@ -121,7 +121,10 @@ export default function Experience() {
                           : "text-gray-500"
                       }`}
                     >
-                      {exp.company}
+                      <LinkAnimation
+                        label={exp.company}
+                        lineColor="bg-blue-600"
+                      />
                     </a>
                   </div>
                   <div className="flex flex-col text-right">

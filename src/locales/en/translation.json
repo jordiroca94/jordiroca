@@ -2,7 +2,6 @@
   "welcome": "Welcome",
   "description": "This is an i18n example",
   "navigation": {
-    "about": "About",
     "projects": "Projects",
     "volunteering": "Volunteering"
   },

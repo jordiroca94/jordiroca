@@ -2,7 +2,6 @@
   "welcome": "Bienvenido",
   "description": "Este es un ejemplo de i18n",
   "navigation": {
-    "about": "Über mich",
     "projects": "Projekte",
     "volunteering": "Freiwilligenarbeit"
   },

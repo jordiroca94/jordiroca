@@ -163,7 +163,7 @@ export default function Canvas() {
                 </h1>
                 <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
                   I'm a software engineer with over 3 years of experience. I
-                  specialize in building web applications using React, Next.js
+                  specialize in building web applications using React, Next.js,
                   TypeScript, Node.js & Go.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 md:justify-start">

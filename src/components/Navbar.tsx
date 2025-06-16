@@ -19,12 +19,12 @@ import {
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import LinkAnimation from "./LinkAnimation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const navigationLinks = [
-    { title: t("navigation.about"), href: "" },
     { title: t("navigation.projects"), href: t("routes.projects") },
     { title: t("navigation.volunteering"), href: t("routes.volunteering") },
   ];
@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <Link
             to="/"
-            className="flex items-center space-x-2 text-xl font-bold focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-md px-2 py-1"
+            className="flex items-center space-x-2 text-xl font-bold rounded-md px-2 py-1"
             aria-label="Go to homepage"
           >
             <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
@@ -67,9 +67,9 @@ export default function Navbar() {
               <Link
                 to={`/${i18n.language}/${link.href}`}
                 key={link.title}
-                className="text-sm font-medium"
+                className="text-base font-medium"
               >
-                {link.title}
+                <LinkAnimation label={link.title} lineColor="bg-black" />
               </Link>
             ))}
           </nav>
