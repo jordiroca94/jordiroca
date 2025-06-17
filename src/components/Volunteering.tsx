@@ -45,7 +45,7 @@ export default function Volunteering() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="max-w-4xl mx-auto min-h-screen p-6 space-y-8 -my-16 pt-32">
+    <div className="max-w-4xl mx-auto  p-6 space-y-8 md:-my-16 md:pt-32 md:min-h-screen">
       <div
         className={`transition-all duration-800 ease-out ${
           isVisible
@@ -56,7 +56,7 @@ export default function Volunteering() {
         <TypograhpyH1 label="Involved with Human Rights" />
       </div>
       <p
-        className={`transition-all duration-800 ease-out ${
+        className={`transition-all duration-800 ease-out font-light text-justify ${
           isVisible
             ? "opacity-100 transform translate-y-0"
             : "opacity-0 transform translate-y-8"
@@ -110,7 +110,7 @@ export default function Volunteering() {
                 onMouseLeave={() => setHoveredButton(null)}
                 href={experience.readMoreUrl}
                 target="_blank"
-                className="relative px-8 py-3 text-gray-900 font-medium group"
+                className="relative px-4 py-3 text-gray-900 font-medium group"
               >
                 <span>Read More</span>
                 <div

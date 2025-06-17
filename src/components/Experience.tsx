@@ -126,12 +126,18 @@ export default function Experience() {
                         lineColor="bg-blue-600"
                       />
                     </a>
-                  </div>
-                  <div className="flex flex-col text-right">
                     <p className="text-sm text-gray-600 mb-1 font-medium">
                       {exp.period}
                     </p>
                     <p className="text-sm text-gray-400">{exp.location}</p>
+                  </div>
+                  <div className="hidden sm:block">
+                    <div className="flex flex-col text-right">
+                      <p className="text-sm text-gray-600 mb-1 font-medium">
+                        {exp.period}
+                      </p>
+                      <p className="text-sm text-gray-400">{exp.location}</p>
+                    </div>
                   </div>
                 </div>
 

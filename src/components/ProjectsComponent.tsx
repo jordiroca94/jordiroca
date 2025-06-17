@@ -71,7 +71,7 @@ export default function ProjectsComponent() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 -my-16 pt-32">
+    <div className="bg-white dark:bg-gray-900 md:-my-16 md:pt-32 md:min-h-screen">
       <div className="max-w-4xl mx-auto px-6">
         <section>
           <div
