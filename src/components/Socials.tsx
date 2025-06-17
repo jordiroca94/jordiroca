@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
-const Socials = () => {
+export default function Socials() {
   return (
     <div className="flex gap-2">
       <a
@@ -30,6 +30,4 @@ const Socials = () => {
       </a>
     </div>
   );
-};
-
-export default Socials;
+}

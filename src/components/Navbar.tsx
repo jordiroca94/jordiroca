@@ -30,9 +30,9 @@ export default function Navbar() {
   ];
 
   const languages = [
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
     { code: "en", name: "English", flag: "🇬🇧" },
     { code: "es", name: "Español", flag: "🇪🇸" },
-    { code: "de", name: "Deutsch", flag: "🇩🇪" },
   ];
 
   const closeSheet = () => setIsOpen(false);
@@ -57,6 +57,7 @@ export default function Navbar() {
             </div>
           </Link>
         </div>
+        {/* DESKTOP NAVIGATION */}
         <div className="hidden md:flex items-center space-x-8">
           <nav
             className="flex items-center space-x-6"
@@ -146,7 +147,7 @@ export default function Navbar() {
               <SheetHeader className="text-left">
                 <SheetTitle>Menu</SheetTitle>
               </SheetHeader>
-
+              {/* MOBILE NAVIGATION */}
               <div className="flex flex-col space-y-6 mt-8">
                 <nav
                   className="flex flex-col space-y-1"
@@ -156,7 +157,7 @@ export default function Navbar() {
                   {navigationLinks.map((link) => (
                     <Link
                       key={link.title}
-                      to={`/${i18n.language}/${t(link.href)}`}
+                      to={`/${i18n.language}/${link.href}`}
                       onClick={closeSheet}
                       className="flex items-center px-3 py-3 text-sm font-medium rounded-md transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                     >

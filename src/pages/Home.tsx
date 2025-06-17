@@ -3,7 +3,7 @@ import BackgroundCanvas from "../components/BackgroundCanvas";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
       <Navbar />
@@ -12,6 +12,4 @@ const Home = () => {
       <Footer />
     </div>
   );
-};
-
-export default Home;
+}

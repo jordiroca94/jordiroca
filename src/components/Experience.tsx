@@ -86,7 +86,7 @@ export default function Experience() {
     <div className="bg-gray-50 min-h-screen py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <TypograhpyH2 label="What have I been up to?" />
-        <div className="space-y-12">
+        <div className="space-y-12 mt-16">
           {experiences.map((exp, index) => (
             <div
               key={index}

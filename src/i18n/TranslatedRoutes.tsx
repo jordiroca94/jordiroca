@@ -6,7 +6,7 @@ import Projects from "../pages/Projects";
 import { localizedRoutes } from "./routes";
 import Volunteering from "../pages/Volunteering";
 
-function TranslatedRoutes() {
+export default function TranslatedRoutes() {
   const { lang } = useParams();
 
   useEffect(() => {
@@ -28,5 +28,3 @@ function TranslatedRoutes() {
     </Routes>
   );
 }
-
-export default TranslatedRoutes;

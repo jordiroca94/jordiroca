@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Volunteering from "../components/Volunteering";
 
-const Projects = () => {
+export default function Projects() {
   return (
     <div>
       <Navbar />
@@ -10,6 +10,4 @@ const Projects = () => {
       <Footer />
     </div>
   );
-};
-
-export default Projects;
+}

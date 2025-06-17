@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import TranslatedRoutes from "./i18n/TranslatedRoutes";
 import "./i18n/i18n";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -12,5 +12,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
