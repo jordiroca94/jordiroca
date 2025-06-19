@@ -1,15 +1,129 @@
 {
-  "welcome": "Welcome",
-  "description": "This is an i18n example",
   "navigation": {
-    "projects": "Projects",
-    "volunteering": "Volunteering"
+    "menu": "Menu",
+    "links": {
+      "projects": "projects",
+      "volunteering": "volunteering"
+    },
+    "languages": {
+      "label": "Language",
+      "en": "English",
+      "es": "Spanish",
+      "de": "German"
+    }
   },
-  "projects": {
-    "title": "Projects"
+  "hero": {
+    "subtitle": "Software engineer with over 3 years of experience. Specialized in building web applications using React, Next.js, TypeScript, Node.js & Go.",
+    "button": "View Projects"
   },
-  "routes": {
-    "projects": "projects",
-    "volunteering": "volunteering"
-  }
+  "experienceTitle": "What have I been up to?",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Acai Travel",
+      "companyUrl": "https://www.acaitravel.com",
+      "period": "Oct 2024 - Present",
+      "location": "Barcelona, Spain",
+      "responsibilities": [
+        "Developed front-end features using Next.js, Tailwind CSS, and React Query",
+        "Created and managed scheduled tasks (CRONs) and webhooks for automation",
+        "Maintained and extended backend services and APIs in Go across a modular platform",
+        "Designed prompts and integrated LLM API calls for various use cases",
+        "Built web scrapers and data extraction workflows with Apify"
+      ]
+    },
+    {
+      "title": "Front End Developer",
+      "company": "Dallonses",
+      "companyUrl": "https://www.dallonses.com",
+      "period": "Aug 2022 - Sep 2024",
+      "location": "Barcelona, Spain",
+      "responsibilities": [
+        "Developed graphical user interfaces and maintained scalable web apps for various clients through Agile methodology",
+        "Communicated with the UX/UI and back-end teams to ensure a consistent user experience",
+        "Implemented UI components with Next.js and TypeScript, styled with Tailwind"
+      ]
+    },
+    {
+      "title": "Front End Developer",
+      "company": "ClowID",
+      "companyUrl": "https://www.clowid.com",
+      "period": "Mar 2022 - June 2022",
+      "location": "Sweden (Remote)",
+      "responsibilities": [
+        "Developed statistical modules and profile modules",
+        "Implemented UI components with Angular and TypeScript, styled using Tailwind and Angular Material",
+        "Tested APIs with Postman and PostgreSQL"
+      ]
+    }
+  ],
+  "projectsTitle": "Code & Craft",
+  "projects": [
+    {
+      "id": 1,
+      "title": "Diverbook",
+      "description": "Fullstack web app to discover and share places for diving.",
+      "githubUrl": "https://github.com/jordiroca94/diverbook",
+      "liveUrl": "https://diverbook.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "Moviechase",
+      "description": "Fullstack web app to discover movies, tv shows, celebrities and more.",
+      "githubUrl": "https://github.com/jordiroca94/moviechase",
+      "liveUrl": "https://moviechase.vercel.app/"
+    },
+    {
+      "id": 3,
+      "title": "Moviechase API",
+      "description": "Rest API to manage favourite movies, watchlist and recommendations through OpenAI. ",
+      "githubUrl": "https://github.com/jordiroca94/moviechase-api",
+      "liveUrl": "https://moviechase-api.up.railway.app/routes"
+    },
+    {
+      "id": 4,
+      "title": "Stop All Ansia",
+      "description": "Music festival website with ticket sales.",
+      "githubUrl": "https://github.com/jordiroca94/stopallansia",
+      "liveUrl": "https://stopallansia.vercel.app/"
+    },
+    {
+      "id": 5,
+      "title": "Movie Recommender Script",
+      "description": "A script that uses OpenAI to recommend movies based on user input.",
+      "githubUrl": "https://github.com/jordiroca94/openai-script"
+    },
+    {
+      "id": 6,
+      "title": "CSV Travel Review Processor",
+      "description": "Script that transforms customer travel reviews into actionable insights using OpenAI.",
+      "githubUrl": "https://github.com/jordiroca94/csv-processor"
+    }
+  ],
+  "volunteeringTitle": "Involved with Human Rights",
+  "volunteeringText": {
+    "1": "On 2020 I was volunteering for a year in Greece involved with the refugee crisis in Europe. Few weeks before covid pandemic started I moved to Samos, a small island in Greece 2km far from Turkey, the second island with the biggest refugee camp in Europe.",
+    "2": "With a refugee camp holding over 8.000 asylum seekers I started volunteering as a restaurant manager on a free restaurant for vulnerable people called Project Armonia. After 6 months, I started volunteering in Still I Rise, a non formal school as a logistics manager."
+  },
+  "volunteerings": [
+    {
+      "id": 1,
+      "role": "Restaurant Manager",
+      "organization": "Project Armonia",
+      "organizationUrl": "https://www.projectarmonia.org/",
+      "description": "Manager of a social restaurant for vulnerable people living in the refugee camp of Samos, Greece",
+
+      "readMoreUrl": "https://www.instagram.com/p/CDUYNX2j7V_/?img_index=1"
+    },
+    {
+      "id": 2,
+      "role": "Logistics Manager",
+      "organization": "Still I Rise NGO",
+      "organizationUrl": "https://stillirisengo.org/",
+      "description": "Logistics Manager of a non-formal school to provide education for unaccompanied minors living in the refugee camp of Samos, Greece",
+
+      "readMoreUrl": "https://www.instagram.com/p/CL6tC_gjJXR/"
+    }
+  ],
+  "readMore": "Read more"
 }

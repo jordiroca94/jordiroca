@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import BackgroundCanvas from "../components/BackgroundCanvas";
+import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <BackgroundCanvas />
+      <Hero />
       <Experience />
       <Footer />
     </div>

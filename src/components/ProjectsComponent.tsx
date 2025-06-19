@@ -3,6 +3,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import { useEffect, useState } from "react";
 import TypograhpyH1 from "./ui/TypographyH1";
+import { useTranslation } from "react-i18next";
 
 interface Project {
   id: number;
@@ -12,55 +13,13 @@ interface Project {
   liveUrl?: string;
 }
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Diverbook",
-    description: "Fullstack web app to discover and share places for diving.",
-    githubUrl: "https://github.com/jordiroca94/diverbook",
-    liveUrl: "https://diverbook.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Moviechase",
-    description:
-      "Fullstack web app to discover movies, tv shows, celebrities and more.",
-    githubUrl: "https://github.com/jordiroca94/moviechase",
-    liveUrl: "https://moviechase.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Moviechase API",
-    description:
-      "Rest API to manage favourite movies, watchlist and recommendations through OpenAI. ",
-    githubUrl: "https://github.com/jordiroca94/moviechase-api",
-    liveUrl: "https://moviechase-api.up.railway.app/routes",
-  },
-  {
-    id: 4,
-    title: "Stop All Ansia",
-    description: "Music festival website with ticket sales.",
-    githubUrl: "https://github.com/jordiroca94/stopallansia",
-    liveUrl: "https://stopallansia.vercel.app/",
-  },
-  {
-    id: 5,
-    title: "Movie Recommender Script",
-    description:
-      "A script that uses OpenAI to recommend movies based on user input.",
-    githubUrl: "https://github.com/jordiroca94/openai-script",
-  },
-  {
-    id: 6,
-    title: "CSV Travel Review Processor",
-    description:
-      "Script that transforms customer travel reviews into actionable insights using OpenAI.",
-    githubUrl: "https://github.com/jordiroca94/csv-processor",
-  },
-];
-
 export default function ProjectsComponent() {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
+
+  const projects = t("projects", {
+    returnObjects: true,
+  }) as Project[];
 
   useEffect(() => {
     const timer = setTimeout(() => {

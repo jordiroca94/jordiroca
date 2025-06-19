@@ -25,14 +25,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const navigationLinks = [
-    { title: t("navigation.projects"), href: t("routes.projects") },
-    { title: t("navigation.volunteering"), href: t("routes.volunteering") },
+    t("navigation.links.projects"),
+    t("navigation.links.volunteering"),
   ];
 
   const languages = [
-    { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "en", name: "English", flag: "🇬🇧" },
-    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "en", name: t("navigation.languages.en"), flag: "🇬🇧" },
+    { code: "de", name: t("navigation.languages.de"), flag: "🇩🇪" },
+    { code: "es", name: t("navigation.languages.es"), flag: "🇪🇸" },
   ];
 
   const closeSheet = () => setIsOpen(false);
@@ -66,11 +66,11 @@ export default function Navbar() {
           >
             {navigationLinks.map((link) => (
               <Link
-                to={`/${i18n.language}/${link.href}`}
-                key={link.title}
-                className="text-base font-medium"
+                to={`/${i18n.language}/${link}`}
+                key={link}
+                className="text-base font-medium capitalize"
               >
-                <LinkAnimation label={link.title} lineColor="bg-black" />
+                <LinkAnimation label={link} lineColor="bg-black" />
               </Link>
             ))}
           </nav>
@@ -136,7 +136,6 @@ export default function Navbar() {
                     !isOpen && "rotate-90 scale-0"
                   )}
                 />
-                <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent
@@ -145,7 +144,7 @@ export default function Navbar() {
               id="mobile-menu"
             >
               <SheetHeader className="text-left">
-                <SheetTitle>Menu</SheetTitle>
+                <SheetTitle>{t("navigation.menu")}</SheetTitle>
               </SheetHeader>
               {/* MOBILE NAVIGATION */}
               <div className="flex flex-col space-y-6 mt-8">
@@ -156,18 +155,18 @@ export default function Navbar() {
                 >
                   {navigationLinks.map((link) => (
                     <Link
-                      key={link.title}
-                      to={`/${i18n.language}/${link.href}`}
+                      key={link}
+                      to={`/${i18n.language}/${link}`}
                       onClick={closeSheet}
-                      className="flex items-center px-3 py-3 text-sm font-medium rounded-md transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                      className="capitalize flex items-center px-3 py-3 text-sm font-medium rounded-md transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                     >
-                      {link.title}
+                      {link}
                     </Link>
                   ))}
                 </nav>
                 <div className="border-t pt-6">
                   <h3 className="text-sm font-medium text-muted-foreground mb-3">
-                    Language
+                    {t("navigation.languages.label")}
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
                     {languages.map((language) => (

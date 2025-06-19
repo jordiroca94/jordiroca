@@ -3,51 +3,23 @@
 import { useEffect, useRef, useState } from "react";
 import TypograhpyH2 from "./ui/TypograhpyH2";
 import LinkAnimation from "./LinkAnimation";
+import { t } from "i18next";
+
+type ExperienceType = {
+  title: string;
+  company: string;
+  companyUrl: string;
+  period: string;
+  location: string;
+  responsibilities: string[];
+};
 
 export default function Experience() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  const experiences = [
-    {
-      title: "Software Engineer",
-      company: "Acai Travel",
-      companyUrl: "https://www.acaitravel.com",
-      period: "Oct 2024 - Present",
-      location: "Barcelona, Spain",
-      responsibilities: [
-        "Developed front-end features using Next.js, Tailwind CSS, and React Query",
-        "Created and managed scheduled tasks (CRONs) and webhooks for automation",
-        "Maintained and extended backend services and APIs in Go across a modular platform",
-        "Designed prompts and integrated LLM API calls for various use cases",
-        "Built web scrapers and data extraction workflows with Apify",
-      ],
-    },
-    {
-      title: "Front End Developer",
-      company: "Dallonses",
-      companyUrl: "https://www.dallonses.com",
-      period: "Aug 2022 - Sep 2024",
-      location: "Barcelona, Spain",
-      responsibilities: [
-        "Developed graphical user interfaces and maintained scalable web apps for various clients through Agile methodology",
-        "Communicated with the UX/UI and back-end teams to ensure a consistent user experience",
-        "Implemented UI components with Next.js and TypeScript, styled with Tailwind",
-      ],
-    },
-    {
-      title: "Front End Developer",
-      company: "ClowID",
-      companyUrl: "https://www.clowid.com",
-      period: "Mar 2022 - June 2022",
-      location: "Sweden (Remote)",
-      responsibilities: [
-        "Developed statistical modules and profile modules",
-        "Implemented UI components with Angular and TypeScript, styled using Tailwind and Angular Material",
-        "Tested APIs with Postman and PostgreSQL",
-      ],
-    },
-  ];
+  const experiences = t("experience", {
+    returnObjects: true,
+  }) as ExperienceType[];
 
   useEffect(() => {
     const observers = itemRefs.current.map((ref, index) => {
@@ -85,7 +57,7 @@ export default function Experience() {
   return (
     <div className="bg-gray-50 min-h-screen py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <TypograhpyH2 label="What have I been up to?" />
+        <TypograhpyH2 label={t("experienceTitle")} />
         <div className="space-y-12 mt-16">
           {experiences.map((exp, index) => (
             <div

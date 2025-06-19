@@ -1,15 +1,127 @@
 {
-  "welcome": "Bienvenido",
-  "description": "Este es un ejemplo de i18n",
   "navigation": {
-    "projects": "Projekte",
-    "volunteering": "Freiwilligenarbeit"
+    "menu": "Menü",
+    "links": {
+      "projects": "projekte",
+      "volunteering": "freiwilligenarbeit"
+    },
+    "languages": {
+      "label": "Sprache",
+      "en": "Englisch",
+      "es": "Spanisch",
+      "de": "Deutsch"
+    }
   },
-  "projects": {
-    "title": "Proyectos"
+  "hero": {
+    "subtitle": "Softwareentwickler mit über 3 Jahren Erfahrung. Spezialisiert auf die Entwicklung von Webanwendungen mit React, Next.js, TypeScript, Node.js & Go.",
+    "button": "Projekte ansehen"
   },
-  "routes": {
-    "projects": "proyectos",
-    "volunteering": "freiwilligenarbeit"
-  }
+  "experienceTitle": "Woran habe ich gearbeitet?",
+  "experience": [
+    {
+      "title": "Softwareentwickler",
+      "company": "Acai Travel",
+      "companyUrl": "https://www.acaitravel.com",
+      "period": "Okt 2024 - Gegenwart",
+      "location": "Barcelona, Spanien",
+      "responsibilities": [
+        "Entwicklung von Front-End-Funktionen mit Next.js, Tailwind CSS und React Query",
+        "Erstellung und Verwaltung geplanter Aufgaben (CRONs) und Webhooks zur Automatisierung",
+        "Wartung und Erweiterung von Backend-Services und APIs in Go auf einer modularen Plattform",
+        "Entwurf von Prompts und Integration von LLM-API-Aufrufen für verschiedene Anwendungsfälle",
+        "Entwicklung von Web-Scrapern und Datenextraktions-Workflows mit Apify"
+      ]
+    },
+    {
+      "title": "Frontend-Entwickler",
+      "company": "Dallonses",
+      "companyUrl": "https://www.dallonses.com",
+      "period": "Aug 2022 - Sep 2024",
+      "location": "Barcelona, Spanien",
+      "responsibilities": [
+        "Entwicklung von grafischen Benutzeroberflächen und wartbaren Webanwendungen für verschiedene Kunden mit agiler Methodik",
+        "Zusammenarbeit mit UX/UI- und Backend-Teams zur Gewährleistung einer konsistenten Benutzererfahrung",
+        "Implementierung von UI-Komponenten mit Next.js und TypeScript, gestylt mit Tailwind"
+      ]
+    },
+    {
+      "title": "Frontend-Entwickler",
+      "company": "ClowID",
+      "companyUrl": "https://www.clowid.com",
+      "period": "Mär 2022 - Juni 2022",
+      "location": "Schweden (Remote)",
+      "responsibilities": [
+        "Entwicklung von Statistik- und Profilmodulen",
+        "Implementierung von UI-Komponenten mit Angular und TypeScript, gestylt mit Tailwind und Angular Material",
+        "API-Tests mit Postman und PostgreSQL"
+      ]
+    }
+  ],
+  "projectsTitle": "Code & Handwerk",
+  "projects": [
+    {
+      "id": 1,
+      "title": "Diverbook",
+      "description": "Fullstack-Webanwendung zum Entdecken und Teilen von Tauchplätzen.",
+      "githubUrl": "https://github.com/jordiroca94/diverbook",
+      "liveUrl": "https://diverbook.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "Moviechase",
+      "description": "Fullstack-Webanwendung zum Entdecken von Filmen, Serien, Prominenten und mehr.",
+      "githubUrl": "https://github.com/jordiroca94/moviechase",
+      "liveUrl": "https://moviechase.vercel.app/"
+    },
+    {
+      "id": 3,
+      "title": "Moviechase API",
+      "description": "REST-API zur Verwaltung von Lieblingsfilmen, Watchlists und Empfehlungen über OpenAI.",
+      "githubUrl": "https://github.com/jordiroca94/moviechase-api",
+      "liveUrl": "https://moviechase-api.up.railway.app/routes"
+    },
+    {
+      "id": 4,
+      "title": "Stop All Ansia",
+      "description": "Website für ein Musikfestival mit Ticketverkauf.",
+      "githubUrl": "https://github.com/jordiroca94/stopallansia",
+      "liveUrl": "https://stopallansia.vercel.app/"
+    },
+    {
+      "id": 5,
+      "title": "Filmempfehlungs-Skript",
+      "description": "Ein Skript, das OpenAI verwendet, um Filme basierend auf Benutzereingaben zu empfehlen.",
+      "githubUrl": "https://github.com/jordiroca94/openai-script"
+    },
+    {
+      "id": 6,
+      "title": "CSV-Reisebewertungsprozessor",
+      "description": "Skript, das Kundenrezensionen zu Reisen in umsetzbare Erkenntnisse mit OpenAI umwandelt.",
+      "githubUrl": "https://github.com/jordiroca94/csv-processor"
+    }
+  ],
+  "volunteeringTitle": "Engagiert für Menschenrechte",
+  "volunteeringText": {
+    "1": "Im Jahr 2020 habe ich ein Jahr lang in Griechenland im Rahmen der Flüchtlingskrise in Europa freiwillig gearbeitet. Einige Wochen vor Beginn der COVID-Pandemie zog ich nach Samos, einer kleinen Insel in Griechenland, 2 km von der Türkei entfernt – die zweitgrößte Insel mit einem der größten Flüchtlingslager Europas.",
+    "2": "Mit einem Lager, das über 8.000 Asylsuchende beherbergte, begann ich als Restaurantmanager in einem kostenlosen Restaurant für schutzbedürftige Personen namens Project Armonia. Nach 6 Monaten begann ich als Logistikmanager bei Still I Rise, einer nicht-formellen Schule, ehrenamtlich zu arbeiten."
+  },
+  "volunteerings": [
+    {
+      "id": 1,
+      "role": "Restaurantleiter",
+      "organization": "Project Armonia",
+      "organizationUrl": "https://www.projectarmonia.org/",
+      "description": "Leiter eines sozialen Restaurants für schutzbedürftige Menschen im Flüchtlingslager von Samos, Griechenland",
+      "readMoreUrl": "https://www.instagram.com/p/CDUYNX2j7V_/?img_index=1"
+    },
+    {
+      "id": 2,
+      "role": "Logistikleiter",
+      "organization": "Still I Rise NGO",
+      "organizationUrl": "https://stillirisengo.org/",
+      "description": "Logistikleiter einer nicht-formellen Schule, die unbegleiteten Minderjährigen im Flüchtlingslager von Samos, Griechenland, Bildung bietet",
+      "readMoreUrl": "https://www.instagram.com/p/CL6tC_gjJXR/"
+    }
+  ],
+  "readMore": "Mehr erfahren"
 }

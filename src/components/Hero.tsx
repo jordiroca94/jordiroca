@@ -2,13 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import ProfileImage from "../assets/images/profile.jpeg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { t } from "i18next";
 import Socials from "./Socials";
 
-export default function Canvas() {
+export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mounted, setMounted] = useState(false);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     setMounted(true);
@@ -162,16 +161,14 @@ export default function Canvas() {
                   Jordi Roca
                 </h1>
                 <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-                  I'm a software engineer with over 3 years of experience. I
-                  specialize in building web applications using React, Next.js,
-                  TypeScript, Node.js & Go.
+                  {t("hero.subtitle")}
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 md:justify-start">
                   <Link
                     to={`/${i18n.language}/${t("routes.projects")}`}
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
                   >
-                    View Projects
+                    {t("hero.button")}
                   </Link>
                   <Socials />
                 </div>
