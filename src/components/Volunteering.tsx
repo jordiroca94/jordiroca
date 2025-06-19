@@ -45,7 +45,7 @@ export default function Volunteering() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="max-w-4xl mx-auto  p-6 space-y-8 md:-my-16 md:pt-32 md:min-h-screen">
+    <div className="max-w-4xl mx-auto  p-6 space-y-3 md:-my-16 md:pt-32 md:min-h-screen">
       <div
         className={`transition-all duration-800 ease-out ${
           isVisible
@@ -65,11 +65,19 @@ export default function Volunteering() {
         On 2020 I was volunteering for a year in Greece involved with the
         refugee crisis in Europe. Few weeks before covid pandemic started I
         moved to Samos, a small island in Greece 2km far from Turkey, the second
-        island with the biggest refugee camp in Europe. With a refugee camp
-        holding over 8.000 asylum seekers I started volunteering as a restaurant
-        manager on a free restaurant for vulnerable people called Project
-        Armonia. After 6 months, I started volunteering in Still I Rise, a non
-        formal school as a logistics manager.
+        island with the biggest refugee camp in Europe.
+      </p>
+      <p
+        className={`transition-all duration-800 ease-out font-light text-justify pb-8 ${
+          isVisible
+            ? "opacity-100 transform translate-y-0"
+            : "opacity-0 transform translate-y-8"
+        }`}
+      >
+        With a refugee camp holding over 8.000 asylum seekers I started
+        volunteering as a restaurant manager on a free restaurant for vulnerable
+        people called Project Armonia. After 6 months, I started volunteering in
+        Still I Rise, a non formal school as a logistics manager.
       </p>
       <div className="space-y-8">
         {volunteeringExperiences.map((experience, index) => (

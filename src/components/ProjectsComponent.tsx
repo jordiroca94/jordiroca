@@ -72,7 +72,7 @@ export default function ProjectsComponent() {
 
   return (
     <div className="bg-white dark:bg-gray-900 md:-my-16 md:pt-32 md:min-h-screen">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6 py-6 md:py-0">
         <section>
           <div
             className={`transition-all duration-800 ease-out ${
