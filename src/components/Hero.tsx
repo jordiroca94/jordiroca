@@ -165,7 +165,7 @@ export default function Hero() {
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 md:justify-start">
                   <Link
-                    to={`/${i18n.language}/${t("routes.projects")}`}
+                    to={`/${i18n.language}/${t("navigation.links.projects")}`}
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
                   >
                     {t("hero.button")}
