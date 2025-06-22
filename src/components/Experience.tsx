@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import TypograhpyH2 from "./ui/TypograhpyH2";
 import LinkAnimation from "./LinkAnimation";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 type ExperienceType = {
   title: string;
@@ -16,7 +16,9 @@ type ExperienceType = {
 
 export default function Experience() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
+
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const { t } = useTranslation();
   const experiences = t("experience", {
     returnObjects: true,
   }) as ExperienceType[];
