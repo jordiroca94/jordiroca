@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className="flex h-16 items-center justify-between px-4 lg:px-8 xl:px-12 2xl:px-16">
         <div className="flex items-center">
           <Link
-            to="/"
+            to={`/${i18n.language}`}
             className="flex items-center space-x-2 text-xl font-bold rounded-md px-2 py-1"
             aria-label="Go to homepage"
           >

@@ -25,35 +25,37 @@
       "period": "Okt 2024 - Gegenwart",
       "location": "Barcelona, Spanien",
       "responsibilities": [
-        "Entwicklung von Front-End-Funktionen mit Next.js, Tailwind CSS und React Query",
-        "Erstellung und Verwaltung geplanter Aufgaben (CRONs) und Webhooks zur Automatisierung",
-        "Wartung und Erweiterung von Backend-Services und APIs in Go auf einer modularen Plattform",
-        "Entwurf von Prompts und Integration von LLM-API-Aufrufen für verschiedene Anwendungsfälle",
-        "Entwicklung von Web-Scrapern und Datenextraktions-Workflows mit Apify"
+        "Entwicklung von Front-End-Funktionen mit Next.js, Tailwind CSS und React Query.",
+        "Migration von Front-End-UI-Komponenten von Material UI zu Tailwind CSS.",
+        "Wartung und Erweiterung von Backend-Services und APIs in Go auf einer modularen Plattform.",
+        "Entwurf von Prompts und Integration von LLM-API-Aufrufen für verschiedene Anwendungsfälle.",
+        "Erstellung von Web-Scrapern und Workflows zur Datenextraktion mit Apify.",
+        "Implementierung und Verwaltung von Unit-Tests in Go und TypeScript."
       ]
     },
     {
-      "title": "Frontend-Entwickler",
+      "title": "Front-End-Entwickler",
       "company": "Dallonses",
       "companyUrl": "https://www.dallonses.com",
       "period": "Aug 2022 - Sep 2024",
       "location": "Barcelona, Spanien",
       "responsibilities": [
-        "Entwicklung von grafischen Benutzeroberflächen und wartbaren Webanwendungen für verschiedene Kunden mit agiler Methodik",
-        "Zusammenarbeit mit UX/UI- und Backend-Teams zur Gewährleistung einer konsistenten Benutzererfahrung",
-        "Implementierung von UI-Komponenten mit Next.js und TypeScript, gestylt mit Tailwind"
+        "Entwicklung responsiver Webanwendungen mit TypeScript-/JavaScript-Frameworks (React, Next.js).",
+        "Verbesserung der Barrierefreiheit um 30 % durch Best Practices und Standards mit Lighthouse.",
+        "Implementierung von UI-Komponenten mit Next.js und TypeScript, gestylt mit Tailwind.",
+        "Leitung und Umsetzung von Projekten von Anfang bis Ende."
       ]
     },
     {
-      "title": "Frontend-Entwickler",
+      "title": "Front-End-Entwickler",
       "company": "ClowID",
       "companyUrl": "https://www.clowid.com",
-      "period": "Mär 2022 - Juni 2022",
+      "period": "März 2022 - Juni 2022",
       "location": "Schweden (Remote)",
       "responsibilities": [
-        "Entwicklung von Statistik- und Profilmodulen",
-        "Implementierung von UI-Komponenten mit Angular und TypeScript, gestylt mit Tailwind und Angular Material",
-        "API-Tests mit Postman und PostgreSQL"
+        "Entwicklung von Statistik- und Profilmodulen.",
+        "Implementierung von UI-Komponenten mit Angular und TypeScript, gestylt mit Tailwind und Angular Material.",
+        "Dokumentation von Prozessen, Modulen und Features mit Confluence."
       ]
     }
   ],

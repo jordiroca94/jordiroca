@@ -25,11 +25,12 @@
       "period": "Oct 2024 - Presente",
       "location": "Barcelona, España",
       "responsibilities": [
-        "Desarrollo de funcionalidades front-end usando Next.js, Tailwind CSS y React Query",
-        "Creación y gestión de tareas programadas (CRONs) y webhooks para automatización",
-        "Mantenimiento y ampliación de servicios backend y APIs en Go dentro de una plataforma modular",
-        "Diseño de prompts e integración de llamadas a APIs de LLM para diversos casos de uso",
-        "Construcción de scrapers web y flujos de extracción de datos con Apify"
+        "Desarrollé funcionalidades de front-end usando Next.js, Tailwind CSS y React Query.",
+        "Migré componentes de UI del front-end de Material UI a Tailwind CSS.",
+        "Mantuve y amplié servicios y APIs del backend en Go dentro de una plataforma modular.",
+        "Diseñé prompts e integré llamadas a APIs de LLM para diversos casos de uso.",
+        "Construí scrapers web y flujos de extracción de datos con Apify.",
+        "Implementé y gestioné pruebas unitarias en Go y Typescript."
       ]
     },
     {
@@ -39,9 +40,10 @@
       "period": "Ago 2022 - Sep 2024",
       "location": "Barcelona, España",
       "responsibilities": [
-        "Desarrollo de interfaces gráficas de usuario y mantenimiento de aplicaciones web escalables para diversos clientes bajo metodología Agile",
-        "Comunicación con los equipos de UX/UI y backend para asegurar una experiencia de usuario consistente",
-        "Implementación de componentes UI con Next.js y TypeScript, estilizados con Tailwind"
+        "Desarrollé aplicaciones web responsivas usando frameworks de TypeScript/JavaScript (React, Next.js).",
+        "Mejoré la accesibilidad en un 30% aplicando buenas prácticas y estándares con Lighthouse.",
+        "Implementé componentes de UI con Next.js y TypeScript, estilizados con Tailwind.",
+        "Lideré la ejecución de proyectos de principio a fin."
       ]
     },
     {
@@ -51,9 +53,9 @@
       "period": "Mar 2022 - Junio 2022",
       "location": "Suecia (Remoto)",
       "responsibilities": [
-        "Desarrollo de módulos estadísticos y módulos de perfil",
-        "Implementación de componentes UI con Angular y TypeScript, estilizados con Tailwind y Angular Material",
-        "Pruebas de APIs con Postman y PostgreSQL"
+        "Desarrollé módulos estadísticos y de perfil.",
+        "Implementé componentes de UI con Angular y TypeScript, estilizados con Tailwind y Angular Material.",
+        "Documenté procesos, módulos y funcionalidades usando Confluence."
       ]
     }
   ],

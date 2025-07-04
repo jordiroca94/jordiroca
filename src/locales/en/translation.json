@@ -25,11 +25,12 @@
       "period": "Oct 2024 - Present",
       "location": "Barcelona, Spain",
       "responsibilities": [
-        "Developed front-end features using Next.js, Tailwind CSS, and React Query",
-        "Created and managed scheduled tasks (CRONs) and webhooks for automation",
+        "Developed front-end features using Next.js, Tailwind CSS, and React Query.",
+        "Migrated front-end UI components from Material UI to Tailwind CSS.",
         "Maintained and extended backend services and APIs in Go across a modular platform",
         "Designed prompts and integrated LLM API calls for various use cases",
-        "Built web scrapers and data extraction workflows with Apify"
+        "Built web scrapers and data extraction workflows with Apify.",
+        "Implemented and managed unit tests in Go & Typescript."
       ]
     },
     {
@@ -39,9 +40,10 @@
       "period": "Aug 2022 - Sep 2024",
       "location": "Barcelona, Spain",
       "responsibilities": [
-        "Developed graphical user interfaces and maintained scalable web apps for various clients through Agile methodology",
-        "Communicated with the UX/UI and back-end teams to ensure a consistent user experience",
-        "Implemented UI components with Next.js and TypeScript, styled with Tailwind"
+        "Developed responsive web apps using TypeScript/JavaScript frameworks (React, Next.js).",
+        "Improved accessibility by 30% using best practices, standards with Lighthouse.",
+        "Implemented UI components with Next.js and TypeScript, styled with Tailwind",
+        "Lead end-to-end execution of projects"
       ]
     },
     {
@@ -51,9 +53,9 @@
       "period": "Mar 2022 - June 2022",
       "location": "Sweden (Remote)",
       "responsibilities": [
-        "Developed statistical modules and profile modules",
-        "Implemented UI components with Angular and TypeScript, styled using Tailwind and Angular Material",
-        "Tested APIs with Postman and PostgreSQL"
+        "Developed statistical and profile modules.",
+        "Implemented UI components with Angular and TypeScript, styled using Tailwind and Angular Material.",
+        "Documented processes, modules and features using Confluence."
       ]
     }
   ],
