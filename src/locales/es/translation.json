@@ -25,12 +25,12 @@
       "period": "Oct 2024 - Presente",
       "location": "Barcelona, España",
       "responsibilities": [
-        "Desarrollé funcionalidades de front-end usando Next.js, Tailwind CSS y React Query.",
-        "Migré componentes de UI del front-end de Material UI a Tailwind CSS.",
-        "Mantuve y amplié servicios y APIs del backend en Go dentro de una plataforma modular.",
-        "Diseñé prompts e integré llamadas a APIs de LLM para diversos casos de uso.",
-        "Construí scrapers web y flujos de extracción de datos con Apify.",
-        "Implementé y gestioné pruebas unitarias en Go y Typescript."
+        "Lideré el desarrollo frontend de una plataforma de viajes impulsada por IA, creando herramientas internas de alto rendimiento y paneles para agentes utilizando Next.js, Tailwind CSS, gestión de estado y React Query.",
+        "Reconstruí componentes de la interfaz reemplazando Material UI por Tailwind CSS y Shadcn UI, mejorando la coherencia, accesibilidad y rendimiento.",
+        "Implementé trabajos cron para automatizar procesos periódicos.",
+        "Gestioné webhooks para integrar la plataforma con CRMs externos, optimizando los flujos de trabajo de clientes.",
+        "Desarrollé funcionalidades backend en Go con pruebas unitarias, aumentando la cobertura y reduciendo errores en producción.",
+        "Mentoricé a desarrolladores junior y contribuí a los estándares internos de calidad de código mediante revisiones."
       ]
     },
     {
@@ -40,22 +40,25 @@
       "period": "Ago 2022 - Sep 2024",
       "location": "Barcelona, España",
       "responsibilities": [
-        "Desarrollé aplicaciones web responsivas usando frameworks de TypeScript/JavaScript (React, Next.js).",
-        "Mejoré la accesibilidad en un 30% aplicando buenas prácticas y estándares con Lighthouse.",
-        "Implementé componentes de UI con Next.js y TypeScript, estilizados con Tailwind.",
-        "Lideré la ejecución de proyectos de principio a fin."
+        "Desarrollé sistemas de componentes escalables y reutilizables con React.js, Next.js y Tailwind CSS, desplegados con éxito en proyectos de salud, juegos y comercio minorista de lujo.",
+        "Lideré la reconstrucción completa de una aplicación médica móvil a una plataforma web en 2 meses, gestionando la arquitectura e implementación frontend de principio a fin.",
+        "Integré APIs backend y colaboré estrechamente con diseñadores para prototipos en Figma.",
+        "Implementé Turborepo en proyectos Next.js, mejorando significativamente la estructura, experiencia del desarrollador y escalabilidad, logrando una reducción del 60% en los tiempos de compilación.",
+        "Adopté Vite para proyectos pequeños sin requisitos de SEO, lo que permitió un desarrollo más rápido, arquitectura más simple y paquetes más ligeros.",
+        "Aumenté las puntuaciones de accesibilidad en un 30% aplicando buenas prácticas y estándares, usando Lighthouse y Ark UI para experiencias más inclusivas."
       ]
     },
     {
       "title": "Desarrollador Front End",
       "company": "ClowID",
-      "companyUrl": "https://www.clowid.com",
-      "period": "Mar 2022 - Junio 2022",
+      "companyUrl": "https://clowid.yspconsulting.com/en/",
+      "period": "Mar 2022 - Jun 2022",
       "location": "Suecia (Remoto)",
       "responsibilities": [
-        "Desarrollé módulos estadísticos y de perfil.",
-        "Implementé componentes de UI con Angular y TypeScript, estilizados con Tailwind y Angular Material.",
-        "Documenté procesos, módulos y funcionalidades usando Confluence."
+        "Construí componentes de UI para funciones estadísticas y de perfil de usuario usando Angular, TypeScript y Tailwind CSS, adaptando diseños para entornos móviles y de escritorio.",
+        "Diseñé y estilicé componentes de UI con Tailwind CSS y Material UI, asegurando la alineación con la identidad visual del producto.",
+        "Probé e integré APIs REST usando Postman, validando datos desde endpoints con PostgreSQL.",
+        "Documenté procesos, módulos y nuevas funcionalidades en Confluence para una clara transferencia de conocimiento."
       ]
     }
   ],

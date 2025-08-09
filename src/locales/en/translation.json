@@ -25,12 +25,12 @@
       "period": "Oct 2024 - Present",
       "location": "Barcelona, Spain",
       "responsibilities": [
-        "Developed front-end features using Next.js, Tailwind CSS, and React Query.",
-        "Migrated front-end UI components from Material UI to Tailwind CSS.",
-        "Maintained and extended backend services and APIs in Go across a modular platform",
-        "Designed prompts and integrated LLM API calls for various use cases",
-        "Built web scrapers and data extraction workflows with Apify.",
-        "Implemented and managed unit tests in Go & Typescript."
+        "Spearheaded the frontend of an AI-driven travel platform, building high-performance internal tooling and agent-facing dashboards using Next.js, Tailwind CSS, state management, and React Query.",
+        "Rebuilt UI components by replacing Material UI with Tailwind CSS and Shadcn UI, improving consistency, accessibility, and performance.",
+        "Implemented cron jobs to automate periodic processes.",
+        "Managed webhooks to integrate the platform with external CRMs, streamlining customer workflows.",
+        "Built backend features in Go with unit tests, boosting coverage and reducing production bugs.",
+        "Mentored junior developers and contributed to internal code quality standards through reviews."
       ]
     },
     {
@@ -40,22 +40,25 @@
       "period": "Aug 2022 - Sep 2024",
       "location": "Barcelona, Spain",
       "responsibilities": [
-        "Developed responsive web apps using TypeScript/JavaScript frameworks (React, Next.js).",
-        "Improved accessibility by 30% using best practices, standards with Lighthouse.",
-        "Implemented UI components with Next.js and TypeScript, styled with Tailwind",
-        "Lead end-to-end execution of projects"
+        "Developed scalable, reusable component systems using React.js, Next.js, and Tailwind CSS, successfully deployed across healthcare, gaming, and luxury retail projects.",
+        "Led the full rebuild of a mobile medical application into a web platform within 2 months, managing frontend architecture and implementation end-to-end.",
+        "Seamlessly integrated backend APIs and collaborated closely with designers for Figma prototypes.",
+        "Implemented Turborepo in Next.js projects, significantly improving project structure, developer experience, and scalability, resulting in a 60% reduction in build times.",
+        "Vite adoption for smaller projects without SEO requirements, enabling faster development, simpler architecture, and smaller bundle sizes.",
+        "Boosted accessibility scores by 30% through applying best practices and standards, utilizing Lighthouse and Ark UI for more inclusive user experiences."
       ]
     },
     {
       "title": "Front End Developer",
       "company": "ClowID",
-      "companyUrl": "https://www.clowid.com",
+      "companyUrl": "https://clowid.yspconsulting.com/en/",
       "period": "Mar 2022 - June 2022",
       "location": "Sweden (Remote)",
       "responsibilities": [
-        "Developed statistical and profile modules.",
-        "Implemented UI components with Angular and TypeScript, styled using Tailwind and Angular Material.",
-        "Documented processes, modules and features using Confluence."
+        "Built UI components for statistical and user profile features using Angular, TypeScript, and Tailwind CSS, adapting layouts for mobile and desktop environments.",
+        "Designed and styled UI components with Tailwind CSS and Material UI, ensuring consistent alignment with product branding and visual identity.",
+        "Tested and integrated REST APIs using Postman, validating data from PostgreSQL-backed endpoints.",
+        "Documented processes, modules, and new features in Confluence for clear knowledge sharing."
       ]
     }
   ],

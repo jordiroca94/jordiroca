@@ -25,37 +25,40 @@
       "period": "Okt 2024 - Gegenwart",
       "location": "Barcelona, Spanien",
       "responsibilities": [
-        "Entwicklung von Front-End-Funktionen mit Next.js, Tailwind CSS und React Query.",
-        "Migration von Front-End-UI-Komponenten von Material UI zu Tailwind CSS.",
-        "Wartung und Erweiterung von Backend-Services und APIs in Go auf einer modularen Plattform.",
-        "Entwurf von Prompts und Integration von LLM-API-Aufrufen für verschiedene Anwendungsfälle.",
-        "Erstellung von Web-Scrapern und Workflows zur Datenextraktion mit Apify.",
-        "Implementierung und Verwaltung von Unit-Tests in Go und TypeScript."
+        "Leitete das Frontend einer KI-gestützten Reiseplattform, entwickelte leistungsstarke interne Tools und Dashboards für Agenten mit Next.js, Tailwind CSS, State Management und React Query.",
+        "Erneuerte UI-Komponenten durch den Ersatz von Material UI mit Tailwind CSS und Shadcn UI, wodurch Konsistenz, Barrierefreiheit und Leistung verbessert wurden.",
+        "Implementierte Cron-Jobs zur Automatisierung periodischer Prozesse.",
+        "Verwaltete Webhooks zur Integration der Plattform mit externen CRMs, um Kunden-Workflows zu optimieren.",
+        "Entwickelte Backend-Funktionen in Go mit Unit-Tests, erhöhte die Testabdeckung und reduzierte Produktionsfehler.",
+        "Betreute Junior-Entwickler und trug durch Code-Reviews zu internen Qualitätsstandards bei."
       ]
     },
     {
-      "title": "Front-End-Entwickler",
+      "title": "Frontend-Entwickler",
       "company": "Dallonses",
       "companyUrl": "https://www.dallonses.com",
       "period": "Aug 2022 - Sep 2024",
       "location": "Barcelona, Spanien",
       "responsibilities": [
-        "Entwicklung responsiver Webanwendungen mit TypeScript-/JavaScript-Frameworks (React, Next.js).",
-        "Verbesserung der Barrierefreiheit um 30 % durch Best Practices und Standards mit Lighthouse.",
-        "Implementierung von UI-Komponenten mit Next.js und TypeScript, gestylt mit Tailwind.",
-        "Leitung und Umsetzung von Projekten von Anfang bis Ende."
+        "Entwickelte skalierbare, wiederverwendbare Komponenten-Systeme mit React.js, Next.js und Tailwind CSS, erfolgreich eingesetzt in Projekten im Gesundheitswesen, Gaming und Luxus-Einzelhandel.",
+        "Leitete den vollständigen Umbau einer mobilen Medizin-App zu einer Webplattform innerhalb von 2 Monaten, einschließlich Architektur und Frontend-Implementierung.",
+        "Integrierte nahtlos Backend-APIs und arbeitete eng mit Designern an Figma-Prototypen zusammen.",
+        "Implementierte Turborepo in Next.js-Projekten, verbesserte die Projektstruktur, Entwicklererfahrung und Skalierbarkeit erheblich und reduzierte die Build-Zeiten um 60%.",
+        "Setzte Vite für kleinere Projekte ohne SEO-Anforderungen ein, was zu schnellerer Entwicklung, einfacherer Architektur und kleineren Bundle-Größen führte.",
+        "Steigerte die Barrierefreiheitswerte um 30% durch Best Practices und Standards unter Verwendung von Lighthouse und Ark UI für inklusivere Benutzererfahrungen."
       ]
     },
     {
-      "title": "Front-End-Entwickler",
+      "title": "Frontend-Entwickler",
       "company": "ClowID",
-      "companyUrl": "https://www.clowid.com",
-      "period": "März 2022 - Juni 2022",
+      "companyUrl": "https://clowid.yspconsulting.com/en/",
+      "period": "Mär 2022 - Jun 2022",
       "location": "Schweden (Remote)",
       "responsibilities": [
-        "Entwicklung von Statistik- und Profilmodulen.",
-        "Implementierung von UI-Komponenten mit Angular und TypeScript, gestylt mit Tailwind und Angular Material.",
-        "Dokumentation von Prozessen, Modulen und Features mit Confluence."
+        "Erstellte UI-Komponenten für Statistik- und Benutzerprofilfunktionen mit Angular, TypeScript und Tailwind CSS und passte Layouts für mobile und Desktop-Umgebungen an.",
+        "Entwarf und gestaltete UI-Komponenten mit Tailwind CSS und Material UI, um eine konsistente Ausrichtung mit der Markenidentität des Produkts sicherzustellen.",
+        "Testete und integrierte REST-APIs mit Postman und validierte Daten von PostgreSQL-basierten Endpunkten.",
+        "Dokumentierte Prozesse, Module und neue Funktionen in Confluence für eine klare Wissensweitergabe."
       ]
     }
   ],
