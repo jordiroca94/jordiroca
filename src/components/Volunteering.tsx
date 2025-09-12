@@ -28,7 +28,7 @@ export default function Volunteering() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="max-w-4xl mx-auto  p-6 space-y-3 md:-my-16 md:pt-32 md:min-h-screen">
+    <div className="max-w-4xl mx-auto  p-6 space-y-3 md:-my-16 md:pt-24 md:min-h-screen">
       <div
         className={`transition-all duration-800 ease-out ${
           isVisible
