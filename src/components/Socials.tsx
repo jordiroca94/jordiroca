@@ -6,7 +6,7 @@ export default function Socials() {
       <a
         href="mailto:jordirocasoler94@gmail.com"
         className="inline-flex h-10 w-10 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
-        aria-label="Email me"
+        aria-label="email"
       >
         <Mail className="h-5 w-5" />
       </a>
@@ -15,16 +15,16 @@ export default function Socials() {
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex h-10 w-10 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
-        aria-label="Visit my GitHub"
+        aria-label="github"
       >
         <Github className="h-5 w-5" />
       </a>
       <a
-        href="https://linkedin.com/in/jordi-roca-soler/"
+        href="https://linkedin.com/in/jordi-roca-soler"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex h-10 w-10 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
-        aria-label="Connect on LinkedIn"
+        aria-label="linkedin"
       >
         <Linkedin className="h-5 w-5" />
       </a>

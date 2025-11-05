@@ -13,3 +13,4 @@ This portfolio is designed to highlight my work, skills, and experience in a cle
 - Tailwind CSS
 - TypeScript
 - i18n
+- GitHub Actions (CI/CD)
