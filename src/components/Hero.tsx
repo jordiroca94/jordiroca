@@ -7,6 +7,7 @@ import Socials from "./Socials";
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mounted, setMounted] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -69,7 +70,7 @@ export default function Hero() {
 
     const baseParticleCount = Math.min(
       100,
-      Math.floor((canvas.width * canvas.height) / 10000)
+      Math.floor((canvas.width * canvas.height) / 10000),
     );
 
     for (let i = 0; i < baseParticleCount; i++) {
@@ -79,7 +80,7 @@ export default function Hero() {
     const addParticlesAt = (x: number, y: number) => {
       for (let i = 0; i < 5; i++) {
         particlesArray.push(
-          new Particle(x + Math.random() * 10 - 5, y + Math.random() * 10 - 5)
+          new Particle(x + Math.random() * 10 - 5, y + Math.random() * 10 - 5),
         );
       }
     };
@@ -151,8 +152,19 @@ export default function Hero() {
           <div className="mx-auto max-w-3xl">
             <div className="flex flex-col items-center md:flex-row md:items-start md:space-x-12">
               <div className="mb-8 md:mb-0">
-                <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 shadow-xl">
-                  <img src={ProfileImage} alt="profile" />
+                <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 shadow-xl bg-muted">
+                  {!isImageLoaded && (
+                    <div className="absolute inset-0 animate-pulse bg-muted-foreground/20 rounded-full" />
+                  )}
+                  <img
+                    src={ProfileImage}
+                    alt="profile"
+                    loading="eager"
+                    onLoad={() => setIsImageLoaded(true)}
+                    className={`w-full h-full object-cover transition-opacity duration-500 ${
+                      isImageLoaded ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
                 </div>
               </div>
 

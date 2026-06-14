@@ -60,7 +60,7 @@ export default function Volunteering() {
         {volunteerings.map((experience, index) => (
           <div
             key={experience.id}
-            className={`transition-all duration-700 ease-out flex justify-between ${
+            className={`transition-all duration-700 ease-out flex flex-col sm:flex-row  justify-between items-center ${
               isVisible
                 ? "opacity-100 transform translate-y-0"
                 : "opacity-0 transform translate-y-12"
@@ -69,7 +69,7 @@ export default function Volunteering() {
               transitionDelay: `${(index + 1) * 150}ms`,
             }}
           >
-            <div className="w-4/5">
+            <div className="w-full sm:w-4/5">
               <div className="mb-4">
                 <h3 className="text-lg font-medium text-gray-900">
                   {experience.role}
@@ -89,7 +89,7 @@ export default function Volunteering() {
                 </p>
               </div>
             </div>
-            <div className="w-1/5 flex items-center justify-end h-16">
+            <div className="w-full sm:w-1/5 flex items-center justify-center sm:justify-end h-16">
               <a
                 onMouseEnter={() => setHoveredButton(index)}
                 onMouseLeave={() => setHoveredButton(null)}
@@ -97,7 +97,9 @@ export default function Volunteering() {
                 target="_blank"
                 className="relative px-4 py-3 text-gray-900 font-medium group"
               >
-                <span> {t("readMore")}</span>
+                <span className="border-b-1 border-b-black sm:border-none">
+                  {t("readMore")}
+                </span>
                 <div
                   className={`
                   absolute top-0 left-0 h-px bg-gray-900 transition-all duration-300 ease-out

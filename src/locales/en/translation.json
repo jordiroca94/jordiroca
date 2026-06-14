@@ -13,16 +13,24 @@
     }
   },
   "hero": {
-    "subtitle": "Software engineer with over 3 years of experience. Specialized in building web applications using React, Next.js, TypeScript, Node.js & Go.",
+    "subtitle": "Software engineer specialized in building web applications using React, Next.js, TypeScript, Node.js & Go.",
     "button": "View Projects"
   },
   "experienceTitle": "What have I been up to?",
   "experience": [
     {
+      "title": "Full Stack Engineer",
+      "company": "Clark",
+      "companyUrl": "https://www.clark.io/",
+      "period": "Jan 2026 - Present",
+      "location": "Berlin, Germany",
+      "responsibilities": ["Building cool stuff"]
+    },
+    {
       "title": "Software Engineer",
       "company": "Acai Travel",
       "companyUrl": "https://www.acaitravel.com",
-      "period": "Oct 2024 - Present",
+      "period": "Oct 2024 - Dec 2025",
       "location": "Barcelona, Spain",
       "responsibilities": [
         "Spearheaded the frontend of an AI-driven travel platform, building high-performance internal tooling and agent-facing dashboards using Next.js, Tailwind CSS, state management, and React Query.",

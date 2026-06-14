@@ -13,16 +13,24 @@
     }
   },
   "hero": {
-    "subtitle": "Softwareentwickler mit über 3 Jahren Erfahrung. Spezialisiert auf die Entwicklung von Webanwendungen mit React, Next.js, TypeScript, Node.js & Go.",
+    "subtitle": "Softwareentwickler spezialisiert auf die Entwicklung von Webanwendungen mit React, Next.js, TypeScript, Node.js & Go.",
     "button": "Projekte ansehen"
   },
   "experienceTitle": "Woran habe ich gearbeitet?",
   "experience": [
     {
+      "title": "Full Stack Engineer",
+      "company": "Clark",
+      "companyUrl": "https://www.clark.io/",
+      "period": "Jan 2026 - Gegenwart",
+      "location": "Berlin, Deutschland",
+      "responsibilities": ["Coole Sachen bauen"]
+    },
+    {
       "title": "Softwareentwickler",
       "company": "Acai Travel",
       "companyUrl": "https://www.acaitravel.com",
-      "period": "Okt 2024 - Gegenwart",
+      "period": "Okt 2024 - Dez 2025",
       "location": "Barcelona, Spanien",
       "responsibilities": [
         "Leitete das Frontend einer KI-gestützten Reiseplattform, entwickelte leistungsstarke interne Tools und Dashboards für Agenten mit Next.js, Tailwind CSS, State Management und React Query.",

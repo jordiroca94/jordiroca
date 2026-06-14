@@ -44,7 +44,7 @@ export default function Experience() {
         {
           threshold: 0.3,
           rootMargin: "-10% 0px -10% 0px",
-        }
+        },
       );
 
       observer.observe(ref);
@@ -100,10 +100,12 @@ export default function Experience() {
                         lineColor="bg-blue-600"
                       />
                     </a>
-                    <p className="text-sm text-gray-600 mb-1 font-medium">
-                      {exp.period}
-                    </p>
-                    <p className="text-sm text-gray-400">{exp.location}</p>
+                    <div className="sm:hidden">
+                      <p className="text-sm text-gray-600 mb-1 font-medium">
+                        {exp.period}
+                      </p>
+                      <p className="text-sm text-gray-400">{exp.location}</p>
+                    </div>
                   </div>
                   <div className="hidden sm:block">
                     <div className="flex flex-col text-right">

@@ -13,16 +13,24 @@
     }
   },
   "hero": {
-    "subtitle": "Ingeniero de software con más de 3 años de experiencia. Especializado en el desarrollo de aplicaciones web usando React, Next.js, TypeScript, Node.js y Go.",
+    "subtitle": "Ingeniero de software especializado en el desarrollo de aplicaciones web usando React, Next.js, TypeScript, Node.js y Go.",
     "button": "Ver proyectos"
   },
   "experienceTitle": "¿En qué he estado trabajando?",
   "experience": [
     {
+      "title": "Full Stack Engineer",
+      "company": "Clark",
+      "companyUrl": "https://www.clark.io/",
+      "period": "Ene 2026 - Actualmente",
+      "location": "Berlin, Alemania",
+      "responsibilities": ["Building cool stuff"]
+    },
+    {
       "title": "Ingeniero de Software",
       "company": "Acai Travel",
       "companyUrl": "https://www.acaitravel.com",
-      "period": "Oct 2024 - Presente",
+      "period": "Oct 2024 - Dic 2025",
       "location": "Barcelona, España",
       "responsibilities": [
         "Lideré el desarrollo frontend de una plataforma de viajes impulsada por IA, creando herramientas internas de alto rendimiento y paneles para agentes utilizando Next.js, Tailwind CSS, gestión de estado y React Query.",

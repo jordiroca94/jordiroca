@@ -42,8 +42,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
-      <div className="flex h-16 items-center justify-between px-4 lg:px-8 xl:px-12 2xl:px-16">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6">
+      <div className="container mx-auto flex h-16 items-center justify-between max-w-4xl">
         <div className="flex items-center">
           <Link
             to={`/${i18n.language}`}
@@ -86,7 +86,7 @@ export default function Navbar() {
                 <span>{i18n.language.toUpperCase()}</span>
                 <ChevronDown
                   className={cn(
-                    "h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180"
+                    "h-3 w-3 transition-transform duration-200 group-data-[state=open]:rotate-180",
                   )}
                 />
               </Button>
@@ -98,7 +98,7 @@ export default function Navbar() {
                   onClick={() => changeLanguage(language.code)}
                   className={cn(
                     "flex items-center space-x-2 cursor-pointer",
-                    i18n.language === language.code && "bg-accent"
+                    i18n.language === language.code && "bg-accent",
                   )}
                 >
                   <span>{language.flag}</span>
@@ -125,15 +125,10 @@ export default function Navbar() {
                 className="relative"
               >
                 <Menu
+                  size={24}
                   className={cn(
-                    "h-6 w-6 transition-all",
-                    isOpen && "rotate-90 scale-0"
-                  )}
-                />
-                <X
-                  className={cn(
-                    "absolute h-6 w-6 transition-all",
-                    !isOpen && "rotate-90 scale-0"
+                    "transition-all",
+                    isOpen && "rotate-90 scale-0",
                   )}
                 />
               </Button>
