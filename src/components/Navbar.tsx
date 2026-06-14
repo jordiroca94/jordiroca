@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { Menu, Globe, ChevronDown } from "lucide-react";
 import { cn } from "../lib/utils";
 import {
   DropdownMenu,
