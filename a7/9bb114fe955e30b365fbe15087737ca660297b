@@ -1,0 +1,20 @@
+.lighthouserc.cjs
+  s_6a8e4b74c0a057::t_4598d76f0fbfd6 23
+  s_6a8e4b74c0a057::t_d08a30ebc370c2 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "a79bb114fe955e30b365fbe15087737ca660297b",
+  "prompts": {},
+  "sessions": {
+    "s_6a8e4b74c0a057": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_12a2c4aa3ffeGSGR8EW2sew8us",
+        "model": "claude-sonnet-4.5"
+      },
+      "human_author": "Jordi Soler <jordi.soler@clark.io>"
+    }
+  }
+}
