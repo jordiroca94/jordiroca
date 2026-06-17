@@ -1,0 +1,19 @@
+.github/workflows/ci-cd.yml
+  s_6a8e4b74c0a057::t_c366c23caaf2a8 99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "e4a0fcf5650d1b6efadb785435436757605cf7d0",
+  "prompts": {},
+  "sessions": {
+    "s_6a8e4b74c0a057": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_12a2c4aa3ffeGSGR8EW2sew8us",
+        "model": "claude-sonnet-4.5"
+      },
+      "human_author": "Jordi Soler <jordi.soler@clark.io>"
+    }
+  }
+}
