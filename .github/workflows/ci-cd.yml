@@ -131,14 +131,6 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Lighthouse reports
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-report-${{ github.sha }}
-          path: .lighthouseci/
-          retention-days: 30
-
       - name: Post commit comment with scores
         if: always()
         uses: actions/github-script@v7
@@ -185,7 +177,7 @@ jobs:
             // Create comment body
             const commentBody = `## 🚀 Lighthouse CI Results
             
-            📊 **Average Scores** (across ${count} audits):
+            📊 **Scores** (average of ${count} runs):
             
             | Category | Score | Status |
             |----------|-------|--------|
@@ -194,13 +186,11 @@ jobs:
             | Best Practices | ${avgBP} | ${getEmoji(avgBP)} |
             | SEO | ${avgSEO} | ${getEmoji(avgSEO)} |
             
-            📄 **Full HTML Report**: [View Artifacts](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
-            
             🔗 **Commit**: \`${context.sha.substring(0, 7)}\`
             ⏰ **Run at**: ${new Date().toUTCString()}
             
             ---
-            *Audited pages: /, /en, /en/projects, /en/volunteering, /es, /es/proyectos, /es/voluntariado, /de, /de/Projekte, /de/Freiwilligenarbeit*`;
+            *Audited pages: / (root), /en (home), /en/projects, /en/volunteering*`;
             
             // Post comment on commit
             await github.rest.repos.createCommitComment({
