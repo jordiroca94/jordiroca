@@ -1,0 +1,21 @@
+.lighthouserc.cjs
+  s_6a8e4b74c0a057::t_d9478b50e55a0f 10
+.github/workflows/ci-cd.yml
+  s_6a8e4b74c0a057::t_849086e18e0358 180,193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "7661d10e32c90044454de506970a0fe2821b3b40",
+  "prompts": {},
+  "sessions": {
+    "s_6a8e4b74c0a057": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_12a2c4aa3ffeGSGR8EW2sew8us",
+        "model": "claude-sonnet-4.5"
+      },
+      "human_author": "Jordi Soler <jordi.soler@clark.io>"
+    }
+  }
+}
