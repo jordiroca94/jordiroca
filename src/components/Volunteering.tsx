@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import TypograhpyH1 from "./ui/TypographyH1";
 import LinkAnimation from "./LinkAnimation";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 type VolunteeringType = {
   id: number;
@@ -15,7 +15,7 @@ type VolunteeringType = {
 export default function Volunteering() {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredButton, setHoveredButton] = useState<number | null>(null);
-  const { t } = useTranslation();
+  const {t} = useTranslation();
   const volunteerings = t("volunteerings", {
     returnObjects: true,
   }) as VolunteeringType[];
@@ -28,7 +28,7 @@ export default function Volunteering() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="max-w-4xl mx-auto  p-6 space-y-3 md:-my-16 md:pt-24 md:min-h-screen">
+    <div className="max-w-4xl mx-auto p-6 space-y-3 md:-my-16 md:pt-24">
       <div
         className={`transition-all duration-800 ease-out ${
           isVisible
@@ -69,15 +69,15 @@ export default function Volunteering() {
               transitionDelay: `${(index + 1) * 150}ms`,
             }}
           >
-            <div className="w-full sm:w-4/5">
-              <div className="mb-4">
+            <div className="w-full  sm:w-4/5">
+              <div className="sm:mb-4 text-center sm:text-left">
                 <h3 className="text-lg font-medium text-gray-900">
                   {experience.role}
                 </h3>
                 <a
                   href={experience.organizationUrl}
                   target="_blank"
-                  className="text-gray-600 font-medium"
+                  className="text-gray-600 font-medium inline-block"
                 >
                   <LinkAnimation
                     label={experience.organization}

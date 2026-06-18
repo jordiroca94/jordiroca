@@ -4,9 +4,11 @@ import Volunteering from "../components/Volunteering";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <Volunteering />
+      <main className="flex-1">
+        <Volunteering />
+      </main>
       <Footer />
     </div>
   );

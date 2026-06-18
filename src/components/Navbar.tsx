@@ -1,14 +1,14 @@
 "use client";
 
-import { Menu, Globe, ChevronDown } from "lucide-react";
-import { cn } from "../lib/utils";
+import {Menu, Globe, ChevronDown} from "lucide-react";
+import {cn} from "../lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { Button } from "./ui/button";
+import {Button} from "./ui/button";
 import {
   Sheet,
   SheetContent,
@@ -16,23 +16,23 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
 import LinkAnimation from "./LinkAnimation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const {t, i18n} = useTranslation();
   const navigationLinks = [
     t("navigation.links.projects"),
     t("navigation.links.volunteering"),
   ];
 
   const languages = [
-    { code: "en", name: t("navigation.languages.en"), flag: "🇬🇧" },
-    { code: "de", name: t("navigation.languages.de"), flag: "🇩🇪" },
-    { code: "es", name: t("navigation.languages.es"), flag: "🇪🇸" },
+    {code: "en", name: t("navigation.languages.en"), flag: "🇬🇧"},
+    {code: "de", name: t("navigation.languages.de"), flag: "🇩🇪"},
+    {code: "es", name: t("navigation.languages.es"), flag: "🇪🇸"},
   ];
 
   const closeSheet = () => setIsOpen(false);
@@ -58,7 +58,7 @@ export default function Navbar() {
           </Link>
         </div>
         {/* DESKTOP NAVIGATION */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden sm:flex items-center space-x-8">
           <nav
             className="flex items-center space-x-6"
             role="navigation"
@@ -91,7 +91,7 @@ export default function Navbar() {
                 />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-48">
+            <DropdownMenuContent align="end">
               {languages.map((language) => (
                 <DropdownMenuItem
                   key={language.code}
@@ -113,7 +113,7 @@ export default function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div className="md:hidden">
+        <div className="sm:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button

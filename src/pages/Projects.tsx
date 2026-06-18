@@ -4,9 +4,11 @@ import ProjectsComponent from "../components/ProjectsComponent";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <ProjectsComponent />
+      <main className="flex-1">
+        <ProjectsComponent />
+      </main>
       <Footer />
     </div>
   );
