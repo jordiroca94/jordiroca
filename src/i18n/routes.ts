@@ -11,7 +11,7 @@ export const localizedRoutes = {
   },
   de: {
     home: "",
-    projects: "Projekte",
-    volunteering: "Freiwilligenarbeit",
+    projects: "projekte",
+    volunteering: "freiwilligenarbeit",
   },
 };

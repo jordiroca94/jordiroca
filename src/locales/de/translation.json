@@ -1,4 +1,18 @@
 {
+  "seo": {
+    "home": {
+      "title": "Jordi Roca — Softwareentwickler",
+      "description": "Softwareentwickler mit über 3 Jahren Erfahrung. Spezialisiert auf die Entwicklung von Webanwendungen mit React, Next.js, TypeScript, Node.js & Go."
+    },
+    "projects": {
+      "title": "Projekte — Jordi Roca",
+      "description": "Entdecke Projekte von Jordi Roca, darunter Fullstack-Webanwendungen, REST-APIs und Entwickler-Tools."
+    },
+    "volunteering": {
+      "title": "Freiwilligenarbeit — Jordi Roca",
+      "description": "Jordi Rocas Freiwilligenarbeit in Griechenland während der europäischen Flüchtlingskrise, bei Project Armonia und Still I Rise."
+    }
+  },
   "navigation": {
     "menu": "Menü",
     "links": {

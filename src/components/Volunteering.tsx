@@ -77,6 +77,7 @@ export default function Volunteering() {
                 <a
                   href={experience.organizationUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 font-medium inline-block"
                 >
                   <LinkAnimation
@@ -95,6 +96,7 @@ export default function Volunteering() {
                 onMouseLeave={() => setHoveredButton(null)}
                 href={experience.readMoreUrl}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="relative px-4 py-3 text-gray-900 font-medium group"
               >
                 <span className="border-b-1 border-b-black sm:border-none">

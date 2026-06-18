@@ -1,4 +1,18 @@
 {
+  "seo": {
+    "home": {
+      "title": "Jordi Roca — Software Engineer",
+      "description": "Software engineer with over 3 years of experience. Specialized in building web applications using React, Next.js, TypeScript, Node.js & Go."
+    },
+    "projects": {
+      "title": "Projects — Jordi Roca",
+      "description": "Explore projects built by Jordi Roca, including fullstack web apps, REST APIs, and developer tools."
+    },
+    "volunteering": {
+      "title": "Volunteering — Jordi Roca",
+      "description": "Jordi Roca's volunteering experience in Greece during the European refugee crisis, working with Project Armonia and Still I Rise."
+    }
+  },
   "navigation": {
     "menu": "Menu",
     "links": {

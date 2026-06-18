@@ -1,4 +1,18 @@
 {
+  "seo": {
+    "home": {
+      "title": "Jordi Roca — Ingeniero de Software",
+      "description": "Ingeniero de software con más de 3 años de experiencia. Especializado en el desarrollo de aplicaciones web con React, Next.js, TypeScript, Node.js y Go."
+    },
+    "projects": {
+      "title": "Proyectos — Jordi Roca",
+      "description": "Explora los proyectos desarrollados por Jordi Roca, incluyendo aplicaciones web fullstack, APIs REST y herramientas para desarrolladores."
+    },
+    "volunteering": {
+      "title": "Voluntariado — Jordi Roca",
+      "description": "La experiencia de voluntariado de Jordi Roca en Grecia durante la crisis de refugiados europea, trabajando con Project Armonia y Still I Rise."
+    }
+  },
   "navigation": {
     "menu": "Menú",
     "links": {

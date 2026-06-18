@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import ProfileImage from "../assets/images/profile.jpeg";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 import Socials from "./Socials";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mounted, setMounted] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const { t, i18n } = useTranslation();
+  const {t, i18n} = useTranslation();
 
   useEffect(() => {
     setMounted(true);
@@ -158,7 +158,7 @@ export default function Hero() {
                   )}
                   <img
                     src={ProfileImage}
-                    alt="profile"
+                    alt="Jordi Roca — Software Engineer"
                     loading="eager"
                     onLoad={() => setIsImageLoaded(true)}
                     className={`w-full h-full object-cover transition-opacity duration-500 ${

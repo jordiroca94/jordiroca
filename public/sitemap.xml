@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.jordirocasoler.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jordirocasoler.com/en" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.jordirocasoler.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.jordirocasoler.com/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://www.jordirocasoler.com/en/projects</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en/projects" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es/proyectos" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de/projekte" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jordirocasoler.com/es/proyectos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en/projects" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es/proyectos" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de/projekte" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jordirocasoler.com/de/projekte</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en/projects" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es/proyectos" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de/projekte" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Volunteering -->
+  <url>
+    <loc>https://www.jordirocasoler.com/en/volunteering</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en/volunteering" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es/voluntariado" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de/freiwilligenarbeit" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jordirocasoler.com/es/voluntariado</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en/volunteering" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es/voluntariado" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de/freiwilligenarbeit" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jordirocasoler.com/de/freiwilligenarbeit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jordirocasoler.com/en/volunteering" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jordirocasoler.com/es/voluntariado" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.jordirocasoler.com/de/freiwilligenarbeit" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

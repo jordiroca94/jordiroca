@@ -1,9 +1,9 @@
 "use client";
 
-import { ExternalLink, Github } from "lucide-react";
-import { useEffect, useState } from "react";
+import {ExternalLink, Github} from "lucide-react";
+import {useEffect, useState} from "react";
 import TypograhpyH1 from "./ui/TypographyH1";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 interface Project {
   id: number;
@@ -15,7 +15,7 @@ interface Project {
 
 export default function ProjectsComponent() {
   const [isVisible, setIsVisible] = useState(false);
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   const projects = t("projects", {
     returnObjects: true,
@@ -70,6 +70,7 @@ export default function ProjectsComponent() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View ${project.title} live demo`}
                         className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:scale-110 hover:-translate-y-1 transform"
                       >
                         <ExternalLink size={18} />
@@ -79,6 +80,7 @@ export default function ProjectsComponent() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`View ${project.title} source code on GitHub`}
                       className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:scale-110 hover:-translate-y-1 transform"
                     >
                       <Github size={18} />

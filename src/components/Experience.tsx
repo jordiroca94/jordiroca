@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import TypograhpyH2 from "./ui/TypograhpyH2";
 import LinkAnimation from "./LinkAnimation";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 type ExperienceType = {
   title: string;
@@ -18,7 +18,7 @@ export default function Experience() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
 
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const { t } = useTranslation();
+  const {t} = useTranslation();
   const experiences = t("experience", {
     returnObjects: true,
   }) as ExperienceType[];
@@ -89,6 +89,7 @@ export default function Experience() {
                     <a
                       href={exp.companyUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className={`text-lg font-medium mb-2 transition-colors duration-500 ${
                         visibleItems.has(index)
                           ? "text-blue-600"
